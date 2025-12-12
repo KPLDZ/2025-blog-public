@@ -1,10 +1,11 @@
 [
   {
     "slug": "2025-12-12",
-    "title": "My First Blog",
+    "title": "Lyra元生成词-用于生成提示词的提示词",
     "tags": [],
-    "date": "2025-12-12T01:14",
-    "summary": "前后端项目复制自：\nhttps://www.yysuni.com/blog/readme\nbilibili教程：\nhttps://www.bilibili.com/video/BV1ezmFBkEPH",
+    "date": "2025-12-12T20:58",
+    "summary": "Lyra元提示词，不错的提示词玩法，仅供参考。",
+    "cover": "/blogs/2025-12-12/d89b34d41cc5f48c.png",
     "hidden": false
   },
   {
