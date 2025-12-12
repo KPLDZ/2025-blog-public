@@ -272,5 +272,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "有趣网址之家",
+		"logo": "blob:https://2025-blog-public-taupe-ten.vercel.app/d0ee220a-0aa6-408d-be5b-f5012f52fc99",
+		"url": "https://youquhome.com/",
+		"description": "这里有你想不到的各种网站，功能五花八门，适合无聊看看",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
