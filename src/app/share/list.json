@@ -232,5 +232,35 @@
 			"3D"
 		],
 		"stars": 3
+	},
+	{
+		"name": "AInav",
+		"logo": "blob:https://2025-blog-public-taupe-ten.vercel.app/2c43b8a9-658c-4070-8068-bf1b206b5dae",
+		"url": "https://www.ainav.cn/",
+		"description": "AInav - AI导航网 | 发现AI,导航未来\n一个提供各类AI工具的导航网站",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
+	},
+	{
+		"name": "SomeLemon",
+		"logo": "blob:https://2025-blog-public-taupe-ten.vercel.app/74f54994-3eb7-4cb9-bad8-b824381c553a",
+		"url": "https://somelemon.com/",
+		"description": "非常精简好用的浏览器新标签页，可以直接设置成默认标签页使用，可自定义性极强，可设动态壁纸。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
+	},
+	{
+		"name": "Z-library",
+		"logo": "blob:https://2025-blog-public-taupe-ten.vercel.app/5f81e711-c695-4d7b-ae2d-c25428b4bc6b",
+		"url": "https://zlib.by/",
+		"description": "全球最大电子书资源网站，可免费获取电子书资源。\n伟大无需多言",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
