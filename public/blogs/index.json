@@ -1,5 +1,18 @@
 [
   {
+    "slug": "markdown-base64",
+    "title": "针对Markdown文件图片嵌入的优化方法",
+    "tags": [
+      "base64",
+      "图片",
+      "脚本"
+    ],
+    "date": "2025-12-12T21:58",
+    "summary": "Markdown中图片自动转base64脚本。",
+    "cover": "/blogs/markdown-base64/b0a8db501c459f07.png",
+    "hidden": false
+  },
+  {
     "slug": "2025-12-12",
     "title": "Lyra元生成词-用于生成提示词的提示词",
     "tags": [
