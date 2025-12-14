@@ -282,5 +282,16 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Wordart",
+		"logo": "https://cdn.wordart.com/static/favicons/favicon-32x32.png",
+		"url": "https://wordart.com/",
+		"description": "在线制作词云图",
+		"tags": [
+			"可视化",
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
