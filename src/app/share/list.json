@@ -293,5 +293,27 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Echarts",
+		"logo": "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226",
+		"url": "https://echarts.apache.org/zh/index.html",
+		"description": "一个基于 JavaScript 的开源可视化图表库\n",
+		"tags": [
+			"可视化",
+			"网站集"
+		],
+		"stars": 3
+	},
+	{
+		"name": "Viz",
+		"logo": "https://www.data-to-viz.com/img/section/BundleSmall.png",
+		"url": "https://www.data-to-viz.com/",
+		"description": "为你推荐最适合你数据的图表。提供构建各类常见同级图表的代码，并列出了你应该避免的常见注意事项。",
+		"tags": [
+			"可视化",
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
