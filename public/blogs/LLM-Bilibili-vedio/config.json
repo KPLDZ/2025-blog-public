@@ -1,0 +1,12 @@
+{
+  "title": "使用大模型自动总结Bilibili视频",
+  "tags": [
+    "langchain",
+    "LLM",
+    "api调用"
+  ],
+  "date": "2025-12-16T01:49",
+  "summary": "利用OpenAI提供的langchain工具库实现BiliBili视频文本总结。",
+  "cover": "/blogs/LLM-Bilibili-vedio/7e66a1b3b880f5fc.png",
+  "hidden": false
+}
