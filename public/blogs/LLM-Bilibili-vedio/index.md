@@ -1,4 +1,4 @@
-# 使用大模型自动总结Bilibili视频
+# BiliBiliLoader工具
 以Edge为例，首先需要登录B站账号，打开开发者工具（`F12`），在应用程序-Cookie栏中找到bilibili官网链接，主要查找`SESSDATA`、`bili_jct`、`buvid3`三个变量，在右侧展开的信息找依次找到对应的三个参数值（注意不要泄露）。
 
 ![img.png][img.png]
