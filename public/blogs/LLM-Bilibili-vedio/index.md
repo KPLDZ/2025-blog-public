@@ -87,6 +87,9 @@ Video Title: 揭秘|朝鲜的人工智能和网络部队有多猛？, descriptio
 | langchain-huggingface   |  1.2.0|
 | langchain-openai        |      1.1.0|
 | langchain-text-splitters |1.1.0|
+|typing_extensions   |     4.15.0|
+|typing-inspect |          0.9.0|
+|typing-inspection|        0.4.2|
 
 第一步主要是做一些初始配置，每个参数我都脸滚键盘做了替换，需要自行改成自己的配置。这里使用了` ChatOpenAI `类来兼容 DeepSeek 的 API 接口，其实本来想着用一些第三方平台比如`DMXAPI`去免费使用一些模型，但是发现官网请求返回的json格式与`ChatOpenAI`类不兼容，无法正确识别和提取返回的文本信息，可能还需要调整输出结构才能使用，所以直接用DeepSeek官方的接口来做了，费用也不贵，这个文档的示例消耗 3946 token，花费0.01额度。
 
