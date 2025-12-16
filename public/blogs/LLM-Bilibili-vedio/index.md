@@ -27,7 +27,7 @@ print(docs[0].__dict__)
 
 - RAG（选做）
 
-如果还想同时总结多个视频，并将视频内容做切分、向量化存储，做成一个知识库RAG，还可以通过`langchain_text_spliter`和`langchain_community.vectorstores.utils`做一个简单的文本切割，比如设置1000字符长度进行一次切割，同时每个分块保证20长度的重叠长度来保证上下文连续性。这次我们还只是简单调用LLM，结合提示词Prompt工程来针对一个视频进行总结，还没有用到RAG技术，如果有多批量视频需要总结和深入分析，可以尝试结合`bert-base-chinese`等向量化模型和`Chroma`做成向量知识库。
+如果还想同时总结多个视频，并将视频内容做切分、向量化存储，做成一个知识库RAG，还可以通过`langchain_text_spliter`和`langchain_community.vectorstores.utils`做一个简单的文本切割，比如设置1000字符长度进行一次切割，同时每个分块保证20长度的重叠长度来保证上下文连续性。这次我们还只是简单调用LLM，结合提示词Prompt工程来针对一个视频进行总结，还没有用到RAG技术，如果有多批量视频需要总结和深入分析，可以尝试结合`bert-base-chinese`等向量化模型和`Chromadb`做成向量知识库。
 
 ```
 from langchain_text_splitters import RecursiveCharacterTextSplitter  # 替换原langchain.text_splitter
@@ -72,6 +72,10 @@ Video Title: 揭秘|朝鲜的人工智能和网络部队有多猛？, descriptio
 第一个过滤后文档元数据：
 {'bvid': 'BV1iGpueKE26', 'aid': 113083720729678, 'videos': 1, 'tid': 207, 'tid_v2': 2098, 'tname': '', 'tname_v2': '', 'copyright': 1, 'pic': 'http://i2.hdslb.com/bfs/archive/e84c6cca2d17c2889213eb00f5621826fcd521ae.jpg', 'title': '揭秘|朝鲜的人工智能和网络部队有多猛？', 'pubdate': 1725534327, 'ctime': 1725521966, 'desc': "1、The All-Purpose Sword: North Korea’s Cyber Operations and Strategies, Ji Young Kong, Jong In Lim, Kyoung Gon Kim\n\n2、North Korean hackers use AI for more sophisticated scams, Christian Davies\n\n3、North Korean hackers return to Tornado Cash despite sanctions, Elliptic\n\n4、Complaint for North Korea-Linked Cryptocurrency Laundering Scheme: What You Need to Know, Chainalysis Team\n\n5、The Lazarus heist: How North Korea almost pulled off a billion-dollar hack， BBC\n\n6、North Korean Hackers Using AI in Advanced Cyberattacks, Jayant Chakravarti\n\n7、Timeline of Cyber Incidents Involving Financial Institutions, the Malcolm H. Kerr Carnegie Middle East Center\n\n8、FASTCash: How the Lazarus Group is Emptying Millions from ATMs, Sy'man'te'c\n\n9、The Incredible Rise of North Korea’s Hacking Army, Ed Caesar\n\n10、Treasury Sanctions North Korean State-Sponsored Malicious Cyber Groups, U.S. Department of the Treasury\n\n11、We Spoke To A North Korean Defector Who Trained With Its Hackers — What He Said Is Pretty Scary, Eugene Kim\n\n12、A deep dive into Kim Il Sung University’s High-Tech Development Institute, Mun Dong Hui\n\n13、North Korean hackers use AI for more sophisticated scams, Christian Davies\n\n14、北朝鮮、日本から仮想通貨980億円奪取\u3000世界被害額の3割, 岩沢明信、小林伶\n\n15、朝鲜网军到底有多强，中国青年报\n\n16、巨额银行失窃案背后 菲赌场成洗钱“圣地”，新华社\n\n17、菲律賓再次被列入全球反洗錢「灰名單」，博彩中介人仍為受關注領域，亚博汇\n\n18、\xa0\xa0朝鲜对韩国频频发动网络战，武晓晓\n\n19、\xa0\xa0数字货币反洗钱的法律监管研究，马慧\n\n20、\xa0\xa0世界上有多少支“黑客部队” 不可忽视的网络战部队，环球之风\n\n21、\xa0\xa0美国起诉“朝鲜黑客”的启示_强化网络主权意识反对网络霸权行为，夏聃\n\n22、\xa0\xa0朝黑客能力仅次美国？，林寒\n\n23、\xa0\xa0“黑客帝国”还是 “基础薄弱”_——探究朝鲜网络战部队，丁义昆\n\n24、高频交易员 华尔街的速度游戏，迈克尔·刘易斯", 'state': 0, 'duration': 938, 'mission_id': 4020701, 'dynamic': '时代是在进步的，朝鲜也一样，他们的黑客和人工智能发展得超出想象，不过就是没有普惠性质了！', 'cid': 25747328369, 'season_id': 3842793, 'teenage_mode': 0, 'is_chargeable_season': False, 'is_story': False, 'is_upower_exclusive': False, 'is_upower_play': False, 'is_upower_preview': False, 'enable_vt': 0, 'vt_display': '', 'is_upower_exclusive_with_qa': False, 'no_cache': False, 'is_season_display': True, 'like_icon': '', 'need_jump_bv': False, 'disable_show_up_info': False, 'is_story_play': 1, 'is_view_self': False, 'url': 'https://www.bilibili.com/video/BV1iGpueKE26'}
 ```
+
+对于Chromadb向量知识库的使用教程和创建，可以参考该github文档：
+
+https://github.com/google-gemini/cookbook/tree/main/examples/chromadb
 
 # Bilibili 视频总结（DeepSeek API 配置）
 1. **区块 1: 库导入与初始化配置**
