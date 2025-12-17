@@ -315,5 +315,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Drawio",
+		"logo": "https://zh.wikipedia.org/static/images/footer/wikimedia-button.svg",
+		"url": "https://next-ai-drawio.jiang.jp/",
+		"description": "一个在线免费绘制流程图的网站，内置AI",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
