@@ -116,7 +116,7 @@ BILI_JCT = "gw45y7"
 # 1. 配置 LLM (适配 DeepSeek API)
 # DeepSeek API 配置
 api_base = "https://api.deepseek.com" 
-api_key = "sk-sgr6gd757gr57"  # 请替换为您的 DeepSeek API Key
+api_key = "sd-jwerl45425"  # 请替换为您的 DeepSeek API Key
 model_name = "deepseek-chat" # DeepSeek 官方推荐的模型名称
 
 llm = ChatOpenAI(
