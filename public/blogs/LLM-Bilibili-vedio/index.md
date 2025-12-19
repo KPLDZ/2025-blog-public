@@ -7,9 +7,9 @@
 
 ```
 from langchain_community.document_loaders import BiliBiliLoader
-SESSDATA ="ff1e8b6f%2C1781330689%2C2863c%2Ac2CjCbCUD6FoViOizxFtJVfEz05l_ZdV81rVgNn3AgmJ-gKlJvhF7cOgfvYhSFWDL81ksSVnBFVFo3R1V1NWZ3TmdqcHNIZ2FKRmVTZ0d4dHp1dF84YWJTd3ViQV9RcThXV0dqdDVZYVJ6ZWdCQm9jUFctazllUFVxNndUZ2ZnaU9IcUF2dkxHdV9RIIEC"
-BUVID3 = "1506698A-9ED1-D848-0BCF-D680536FDBE653572infoc"
-BILI_JCT = "b62b75e248f1e6502e2e978aee75cbe9"
+SESSDATA ="sdogjoi3"
+BUVID3 = "set4345"
+BILI_JCT = "vs4ds6gvse65g"
 bv_id = "BV1iGpueKE26"
 loader = BiliBiliLoader(
     [
