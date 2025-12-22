@@ -1,5 +1,18 @@
 [
   {
+    "slug": "LLM-Bilibili-vedio-2.0",
+    "title": "使用大模型自动总结Bilibili视频（V2.0）",
+    "tags": [
+      "langchain",
+      "LLM",
+      "api调用"
+    ],
+    "date": "2025-12-23T01:30",
+    "summary": "改进了上一版的BiliBiliLoader工作流，使得模型输出有更强的稳定性。",
+    "cover": "/blogs/LLM-Bilibili-vedio-2.0/d1dfb2bae6ebc9c8.png",
+    "hidden": false
+  },
+  {
     "slug": "LLM-Bilibili-vedio",
     "title": "使用大模型自动总结Bilibili视频",
     "tags": [
