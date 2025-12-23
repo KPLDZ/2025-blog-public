@@ -346,5 +346,15 @@
 			"可视化"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Transformer Explainer",
+		"logo": "https://poloclub.github.io/transformer-explainer/favicon.png",
+		"url": "poloclub.github.io/transformer-explainer/",
+		"description": "一个在线展示Transformer架构的具体计算流程的可视化网站",
+		"tags": [
+			"可视化"
+		],
+		"stars": 3
 	}
 ]
