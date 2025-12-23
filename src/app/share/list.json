@@ -336,5 +336,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Tensorflow-Playground",
+		"logo": "http://playground.tensorflow.org/favicon.png",
+		"url": "http://playground.tensorflow.org",
+		"description": "超有趣的神经网络可视化工具：Tensorflow-Playground",
+		"tags": [
+			"可视化"
+		],
+		"stars": 3
 	}
 ]
