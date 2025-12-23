@@ -7,7 +7,12 @@
 # 库导入与初始化配置
 第二版代码的环境与第一版完全一致，链接直达：`https://2025-blog-public-taupe-ten.vercel.app/blog/LLM-Bilibili-vedio`
 
-第二版代码在该部分主要修改了`default_prompt`，也就是提示词，以适配两种策略。
+第二版代码在该部分主要修改了`default_prompt`，也就是提示词，以适配两种策略。需要自行配置的参数没有变化：
+
+1. SESSDATA
+2. BUVID3
+3. BILI_JCT
+4. api_key
 
 ```
 # 导入所需的、兼容 LangChain v1.x 的库
