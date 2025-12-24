@@ -68,12 +68,12 @@ sbatch submit_training.sh
 
 ```
 # 查询任务状态
-squeue -u [your_username]
+squeue -u your_username
 ```
 
 执行完上面一行代码后会生成一个任务ID显示在终端中，可以及时记录并查询任务的运行结果
 
 ```
 # 查询对应任务的ID，比如40629659，动态监控结果
-tail -f slurm-[40629659].out
+tail -f slurm-40629659.out
 ```
