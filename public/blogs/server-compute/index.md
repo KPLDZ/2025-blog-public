@@ -1,5 +1,9 @@
 近日在`Duke dcc on-demand`上使用了服务器运行自己的脚本，记录一下使用的过程（账号是借用的）。
-服务器端系统是`AlmaLinux 9.6 (Sage Margay)`，属于`Red Hat Enterprise Linux (RHEL)`的一个免费兼容版本。接下来记录提交离线任务的代码。
+服务器端系统是`AlmaLinux 9.6 (Sage Margay)`，属于`Red Hat Enterprise Linux (RHEL)`的一个免费兼容版本。
+
+Duke DCC (Duke Compute Cluster) 高性能计算平台地址： `https://shib.oit.duke.edu/idp/authn/external?conversation=e1s1`
+
+# 离线任务代码
 
 在网页上申请一个服务器端口，待端口成功运行开放后，进入服务器端页面，自动连接至服务器端的`jupyter lab`，创建你的工作目录并在工作目录中打开`Terminal`终端，输入如下指令创建一个sh文件用于`bash`提交。
 
