@@ -1,5 +1,15 @@
 [
   {
+    "slug": "AIGC-note",
+    "title": "老齐-AIGC开发",
+    "tags": [
+      "AIGC"
+    ],
+    "date": "2025-12-25T09:40",
+    "summary": "",
+    "hidden": false
+  },
+  {
     "slug": "server-compute",
     "title": "学习笔记--服务器集群提交任务代码（支持离线运行）",
     "tags": [
