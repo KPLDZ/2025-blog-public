@@ -1,5 +1,17 @@
 [
   {
+    "slug": "SQL－Learn",
+    "title": "SQL学习笔记-（原地更新）",
+    "tags": [
+      "SQL",
+      "学习笔记"
+    ],
+    "date": "2025-12-30T16:49",
+    "summary": "此文档记录我的SQL学习记录和心得体会。",
+    "cover": "/blogs/SQL－Learn/7aee2a13064f410c.png",
+    "hidden": false
+  },
+  {
     "slug": "AIGC-note",
     "title": "老齐-AIGC开发",
     "tags": [
