@@ -103,6 +103,8 @@ FROM emp
 GROUP BY deptno, job;
 ```
 
+非常需要注意的是：group by和select 的搭配有严格要求，group by的字段必须完全覆盖select中的非聚合字段，否则SQL无法处理没有覆盖到的聚合函数和非聚合字段的关系。在上面的例子中，聚合函数是max(sal)，非聚合字段是deptno和job，那么group by就必须包括这两个字段。
+
 # Having
 
 基本用法
