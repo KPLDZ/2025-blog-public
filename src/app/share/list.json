@@ -367,5 +367,25 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "MixVoice",
+		"logo": "https://aiclonevoicefree.com/logo.png",
+		"url": "https://aiclonevoicefree.com/zh",
+		"description": "免费的人声模型在线训练微调，支持通过上传一段数秒的人声音频建立文生音模型。",
+		"tags": [
+			"AI"
+		],
+		"stars": 3
+	},
+	{
+		"name": "即时工具",
+		"logo": "https://file-gz1.67tool.com/file/icon/min/MBVZvZr47eCh3zvcr5yDWDnn.webp",
+		"url": "https://www.67tool.com/audio/edit/cut?identity=undefined",
+		"description": "可在线完成大量简单的文件处理，包括音频剪切、图片转换、文档转换等等。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
