@@ -357,5 +357,15 @@
 			"可视化"
 		],
 		"stars": 3
+	},
+	{
+		"name": "HighlightCode",
+		"logo": "https://highlightcode.com/logo.69f31d7e6694efa9aecc.png?",
+		"url": "https://highlightcode.com/",
+		"description": "高亮代码，支持多种语言，输入原始代码可为代码增添编译器着色，用于复制在word代码块中，创建一个1*1表格即可粘贴进去。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
