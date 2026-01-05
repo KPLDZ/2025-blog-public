@@ -387,5 +387,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "北大李东风主页",
+		"logo": "https://www.math.pku.edu.cn/images/logo_01.png",
+		"url": "https://www.math.pku.edu.cn/teachers/lidf/",
+		"description": "包含随机过程等各类数理统计基础课程的讲义讲解，比较清晰。可多学习。\nhttps://www.math.pku.edu.cn/teachers/lidf/course/stochproc/stochprocnotes/html/_book/index.html",
+		"tags": [
+			"学习"
+		],
+		"stars": 3
 	}
 ]
