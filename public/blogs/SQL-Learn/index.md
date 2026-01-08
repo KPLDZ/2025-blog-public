@@ -11,7 +11,7 @@ Mysql全语句执行顺序排名：
 
 # 聚合函数
 
-在SQL中，聚合函数（Aggregate Functions）是用来对一组值执行计算，并返回单个值的函数。它们常用于数据分析，比如在数据库中对一组数据求和、平均值、最大值、最小值等。包括Count、Max、Min、Avg、Sum等。
+在SQL中，聚合函数（Aggregate Functions）是用来对一组值执行计算，并返回单个值的函数。它们常用于数据分析，比如在数据库中对一组数据求和、平均值、最大值、最小值等。包括Count、Max、Min、Avg、Sum等。需要注意聚合函数关于NULL值的处理：除了count(*)之外的其他聚集函数（包括count(列), sum(), avg(), max(), min()）都只操作非NULL的值。
 
 # 非窗口聚合函数
 
