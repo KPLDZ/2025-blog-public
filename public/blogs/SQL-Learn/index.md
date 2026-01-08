@@ -141,6 +141,15 @@ on c.Cno=sc.Cno
 
 上面是一个三表连接的示例，实际的多表连接都可以按照该格式写。左外连接包含left join左表所有行，如果左表中某行在右表没有匹配，则结果中对应行右表的部分全部为空(NULL),结果就是在左边的表基础上按照连接的字段新增右表的结果（连接的字段会多出一列一摸一样的字段名，所以在select中要从二者中视情况选择一个，否则字段名重复会报错）。同理有右连接right join，就是以右表为主表连接左表，保证右表的完整性。内连接inner join仅返回两个表中都存在的行，如果有一行没有同时在连接的表中出现就不会返回在结果中。full join又称全连接或外连接，查询返回左右表所有的行，如果某一边没有匹配的行，就用NULL填充。
 
+当然，一般最常用的连接方式就是ID的匹配连接，但`on`语句后面可以不止创建一个字段的连接，比如：
+
+```
+select s.user_id,s.date,o.date
+from student as s
+inner join order as o
+on s.user_id = o.user_id and datediff(o.order_date,s.visit_date)=1
+```
+
 具体的各类连接可视化可参考下图：
 
 ![b7fd5266d01609243160b1fed44f2bf5e7cd3460.jpeg][b7fd5266d01609243160b1fed44f2bf5e7cd3460.jpeg]
