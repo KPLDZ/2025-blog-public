@@ -1,5 +1,9 @@
 **MySQL**
 
+**DQL(Data Query Language)--数据查询语言：**
+
+用于查询数据库表中的记录。关键字：select、from、where等。
+
 学习网址：
 
 1. 牛客：`https://www.nowcoder.com/`
