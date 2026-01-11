@@ -331,6 +331,7 @@ SELECT 10.1 - 0.2;  -- 实际输出9.9000000000000004
 
 -- 使用DECIMAL类型保证精度
 SELECT CAST(10.1 AS DECIMAL(10,2)) - CAST(0.2 AS DECIMAL(10,2)); --输出9.90
+SELECT CONVERT(10.1,DECIMAL(10,2)); -- 输出10.10,MySQL中DECIMAL参数在第二位，在SQL Server中相反，DECIMAL参数在第一位。
 ```
 
 `DECIMAL`类型的语法为DECIMAL(M,D)，其中M表示整数和小数的总位数（1-65，默认10），D表示小数位数（0-30，默认0），使用DECIMAL字段时，建议M，D参数手动指定，并按需分配。
