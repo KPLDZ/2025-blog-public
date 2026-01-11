@@ -198,7 +198,7 @@ CASE
 END
 ```
 
-相比if，case when有更强的灵活性，一个case when可以没有else，但是一定要有end结束符（常忽略），作为逻辑判断语句，可以嵌入的位置非常灵活，比如从违约天数记录里统计有违约记录的客户总数。
+相比if，case when有更强的灵活性，一个case when可以没有else，但是一定要有end结束符（常忽略），作为逻辑判断语句，可以嵌入的位置非常灵活，比如从违约天数记录里统计有违约记录的客户总数。这里需要注意count搭配case when做条件计数时的细节，默认case when不写else会将不满足条件的记录返回null，如果这里手动写了else，一定要写成else null而不是else 0！因为count会记录所有非null的记录个数而不是依据数值大小进行计数。
 
 ```
 select count(case when overdue_days  is not null then 1 end) as overdue_sum
