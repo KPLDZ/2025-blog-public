@@ -407,5 +407,15 @@
 			"AI"
 		],
 		"stars": 3
+	},
+	{
+		"name": "DMXAPI",
+		"logo": "https://doc.dmxapi.cn/0_fenxiang/D.png",
+		"url": "https://www.dmxapi.cn/",
+		"description": "一个和openai类似的国内大模型api调用中转网站，有许多免费可调用的模型api",
+		"tags": [
+			"AI"
+		],
+		"stars": 3
 	}
 ]
