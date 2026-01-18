@@ -397,5 +397,15 @@
 			"学习"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Runninghub",
+		"logo": "https://www.runninghub.cn/_nuxt/wx-app-qr-code.BrGO6mM2.png",
+		"url": "https://www.runninghub.cn/",
+		"description": "在线使用ComfyUI，平台可使用最新开源模型，邀请一人注册得500RH币，可通过闲鱼低成本批量获取RH币",
+		"tags": [
+			"AI"
+		],
+		"stars": 3
 	}
 ]
