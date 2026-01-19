@@ -1,0 +1,10 @@
+{
+  "title": "主流向量数据库简介和用法",
+  "tags": [
+    "向量数据库"
+  ],
+  "date": "2026-01-19T22:10",
+  "summary": "学习langchian过程中了解到的向量知识库内容，可用于实现数据的增、删、改、查，构建属于自己的向量知识库实现RAG功能。",
+  "cover": "/blogs/vector-data-base/a0fbad33b5192007.jpeg",
+  "hidden": false
+}
