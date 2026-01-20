@@ -417,5 +417,15 @@
 			"AI"
 		],
 		"stars": 3
+	},
+	{
+		"name": "SiliconFlow",
+		"logo": "https://cloud.siliconflow.cn/favicon.ico",
+		"url": "https://cloud.siliconflow.cn/me/models",
+		"description": "和dmxapi有着类似功能的平台，硅基流动的模型划分更加细致，更靠近HuggingFace的划分风格，支持api调用，分免费和付费模型。",
+		"tags": [
+			"AI"
+		],
+		"stars": 3
 	}
 ]
