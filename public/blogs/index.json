@@ -1,5 +1,18 @@
 [
   {
+    "slug": "LangChain-RAG-Web",
+    "title": "基于FastAPI、LangChain框架和streamlit快速开发一个私人知识库问答AI网页",
+    "tags": [
+      "LangChain",
+      "Web",
+      "开发"
+    ],
+    "date": "2026-01-23T00:09",
+    "summary": "本文档记录了一个基于LangChain框架的网页AI聊天助手项目的完整开发过程。项目支持用户注册登录、多会话独立管理、专家角色切换、文档上传构建RAG知识库，以及持久化记忆功能。采用前后端分离架构，后端使用FastAPI+SQLite，前端使用Streamlit，最终实现了一个具备完整对话与知识检索能力的AI应用。",
+    "cover": "/blogs/LangChain-RAG-Web/e4541d13909585e3.png",
+    "hidden": false
+  },
+  {
     "slug": "LangChain-introduction",
     "title": "LangChain框架使用示例和文档",
     "tags": [
