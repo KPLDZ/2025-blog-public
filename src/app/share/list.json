@@ -427,5 +427,15 @@
 			"AI"
 		],
 		"stars": 3
+	},
+	{
+		"name": "SQLiteEviewer",
+		"logo": "https://sqliteviewer.flowsoft7.com/favicon.ico",
+		"url": "sqliteviewer.flowsoft7.com",
+		"description": "一个在线查看SQLite数据库文件的网页，直接拖入.db文件就可以在线预览数据库表文件，方便好用。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
