@@ -1,4 +1,10 @@
-# **1.简易对话链**
+LangChain框架使用示例和文档如下所示，该文档中可以查阅到LangChain的许多用法，为学习和开发提供参考和借鉴。
+
+`https://www.langchain.com.cn/docs/introduction/`
+
+以下是我自己在jupyter notebook中尝试做的一些LangChain框架实践，记录一下学习的过程。
+
+# 1.简易对话链
 StrOutputParser 是 LangChain 框架中最基础且使用频率最高的输出解析器（Output Parser）组件。 ‌,它的核心功能是将大型语言模型（LLM）生成的原始文本回复，‌原样返回‌，不进行任何结构化转换或内容修改。 ‌
 
 **主要用途与场景:**
@@ -39,7 +45,7 @@ if __name__ == "__main__":
 AI答复: 中国的首都是北京。
 ```
 
-# **2.结构化输出**
+# 2.结构化输出
 **语法含义拆解**
 1. class AnalysisResult(BaseModel):
 BaseModel: 这是 Pydantic 的基类。继承它之后，AnalysisResult 就拥有了自动校验、序列化（如 .dict(), .json()）等高级功能。
@@ -197,7 +203,7 @@ if __name__ == "__main__":
 解析成功：
 {'sentiment': '积极', 'topic': '股市上涨与投资信心', 'summary': '今日股市大涨，对未来投资充满信心'}
 ```
-# **3.历史记忆与消息占位符**
+# 3.历史记忆与消息占位符
 在 LangChain 框架中，ChatPromptTemplate 的角色可以被理解为 “提示词工程的脚手架”。它不仅仅是一个简单的字符串格式化工具，更是连接“用户原始输入”与“模型结构化指令”之间的重要桥梁。
 
 对话式模型（如 GLM-4, GPT-4）通常需要区分不同的角色。ChatPromptTemplate 允许你将提示词拆解为：
@@ -249,7 +255,7 @@ print("AI答复:",response.content)
 [SystemMessage(content='你是一个友好的中文助理', additional_kwargs={}, response_metadata={}), HumanMessage(content='1+1 = ?', additional_kwargs={}, response_metadata={}), AIMessage(content='1+1 = 2', additional_kwargs={}, response_metadata={}), HumanMessage(content='我刚才问的问题是什么？', additional_kwargs={}, response_metadata={})]
 AI答复: 你刚才问的是“1+1 = ?”（或类似表达），当时助理回答了“1+1 = 2” 。如果是想确认具体问题，就是那个加法运算的提问~
 ```
-# **4.工具调用(Tool Calling)**
+# 4.工具调用(Tool Calling)
 在使用 LangChain 的 @tool 装饰器时，函数必须包含“文档字符串（docstring）”，或者在装饰器中显式提供 description 参数。这是因为 LangChain 需要将这个描述发送给大模型（LLM），让模型知道在什么情况下该调用这个工具。在这里的示例中就是@tool下面的 **"""计算两个整数之和。"""** 
 ```
 #必要库
@@ -360,7 +366,7 @@ print(rets)
 ['RAG（Retrieval - Augmented Generation）是一种结合信息检索与生成技术的框架，用于辅助文本生成并提升内容准确性。', 'Agent是能够自主决策、执行任务并与环境或其他智能体交互的智能实体（或程序）。', 'LangGraph 是一种用于构建有状态、可观察的 AI 应用（如多步骤流程、协作代理等），以图结构管理流程的框架，常与 LangChain 等工具结合实现复杂 AI 任务调度与执行。']
 ['RAG（Retrieval - Augmented Generation）是一种结合信息检索与文本生成技术，使大型语言模型在生成内容时融入外部检索到的相关信息以增强输出效果。', 'Agent是具备自主性、能动性并可与环境和其它Agent交互以完成特定任务的人工智能实体（或程序）。', 'LangGraph 是一个基于有向无环图的框架，用于构建和管理有状态的 AI 应用流程（如多步骤任务、会话式交互），属于 LangChain 生态，支持复杂工作流的编排与执行。']
 ```
-# **7.LCEL分支与并行**
+# 7.LCEL分支与并行
 ```
 # 必要库
 from langchain_core.runnables import RunnableBranch, RunnableParallel
@@ -387,7 +393,7 @@ print(parallel.invoke({"text":"RAG（Retrieval - Augmented Generation）是一�
 ```
 {'summary': 'RAG是一种结合信息检索与生成技术的框架，用于辅助文本生成并提升内容准确性。', 'points': '以下是关于 RAG 的三条要点：  \n\n1. **核心架构融合**：RAG 是一种结合信息检索（Retrieval）与生成（Generation）技术的框架，通过先从外部知识库、数据库或网络资源中检索相关上下文信息，再将这些信息作为补充输入传递给生成模型，实现“检索→生成”的协同工作模式。  \n2. **提升内容准确性**：在文本生成环节，RAG 能为生成模型提供真实、实时的外部信息支撑，弥补纯生成式 AI 依赖单一训练数据的局限，从而减少生成内容中的错误、过时或无依据情况，增强输出的专业性与可靠性。  \n3. **拓展应用场景**：该框架适用于需要结合最新资讯、特定领域专业知识进行文本生成的场景（如新闻报道、学术写作、客服问答等），通过动态获取外部信息，让生成内容更具针对性和时效性，同时保留生成模型的创意表达能力。  \n\n\n（注：以上要点围绕 RAG “检索+生成”的核心逻辑、功能优势与应用方向展开，覆盖了技术本质、效果提升、场景适用等维度。）'}
 ```
-# **8.可持续记忆(RunnableWithMessageHistory)**
+# 8.可持续记忆(RunnableWithMessageHistory)
 这段代码展示了如何使用 LangChain 构建一个带有“记忆”（Session Memory）功能的聊天机器人。
 
 通常，LLM（大语言模型）本身是“无状态”的（Stateless），这意味着如果你问它“我是谁？”，除非你在当前的请求中包含了之前的对话，否则它无法知道你是谁。这段代码通过 RunnableWithMessageHistory 解决了这个问题，实现了会话上下文的自动管理。
@@ -470,7 +476,7 @@ AI: 你好呀，张三！有什么我可以帮你的吗？
 AI: 我叫张三（不过你刚才已经说过啦～）或者更直接点，按照你说的，我叫张三呀。不过如果是要确认你自己的名字，那就是张三哦～（或者简单回答：你是张三呀。）等一下，看上下文，用户第一次说“我叫张三。”然后问“我叫什么？”，所以应该直接回答他自己的名字，也就是张三。所以回复可以是：“你是张三呀。” 或者 “我叫张三（就是你刚才说的名字哦～）” 。不过更自然的是：“你是张三呀。” 或者直接说“张三”。
 等等，再想想，用户第一次说“我叫张三。”然后现在问“我叫什么？”，其实就是想确认自己叫什么，所以应该回答他的名字，也就是张三。所以最终回复应该是：“你是张三呀。” 或者 “我叫张三。” （因为用户一开始就说“我叫张三。”，所以可以呼应）。或者更简洁的：“张三。” 。不过结合之前的对话，“你好呀，张三！有什么我可以帮你的吗？” 然后用户问“我叫什么？”，所以回答“你是张三呀。” 或者直接说“张三” 都可以。比如：“你是张三呀。” 或者 “我叫张三。” 。或者更自然的：“哦，你是张三呀！” 但可能最直接的就是：“你是张三呀。” 或者直接你是张三呀。（或：我叫张三。）
 ```
-# **9.简单RAG(Retrieve Augment Generation)-检索增强生成**
+# 9.简单RAG(Retrieve Augment Generation)-检索增强生成
 这段代码实现了一个标准的 RAG（检索增强生成） 流程。它并没有使用 LangChain 的 Runnable 链式语法（LCEL），而是使用更直观的 Python 函数方式来编排流程。
 
 RecursiveCharacterTextSplitter作用：将长文本（知识库）切分成小的“数据块”（Chunks）。
@@ -594,7 +600,7 @@ docs: [Document(id='7cdfa721-9e60-4e52-9cf8-b78dad038521', metadata={}, page_con
 
 根据已知内容，LangGraph 是用于**多个 Agent 协作与分支逻辑建模**的工具/框架。
 ```
-# **10.容错与回退机制(Fallback)**
+# 10.容错与回退机制(Fallback)
 ```
 # 必要库
 from langchain_openai import ChatOpenAI
