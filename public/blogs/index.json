@@ -1,5 +1,17 @@
 [
   {
+    "slug": "casual-forest",
+    "title": "因果森林文献阅读",
+    "tags": [
+      "论文",
+      "记录"
+    ],
+    "date": "2026-03-10T19:15",
+    "summary": "因果森林文献阅读记录",
+    "cover": "/blogs/casual-forest/6aae209cc487feb0.png",
+    "hidden": false
+  },
+  {
     "slug": "LangChain-RAG-Web",
     "title": "基于FastAPI、LangChain框架和streamlit快速开发一个私人知识库问答AI网页",
     "tags": [
