@@ -447,5 +447,16 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "moonlight",
+		"logo": "https://www.themoonlight.io/images/moonlight-logo.png",
+		"url": "https://www.themoonlight.io/",
+		"description": "Moonlight论文在线阅读平台，支持AI帮助和全文翻译。",
+		"tags": [
+			"网站集",
+			"学习"
+		],
+		"stars": 3
 	}
 ]
