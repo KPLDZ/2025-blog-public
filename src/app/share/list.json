@@ -437,5 +437,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "贝式计算",
+		"logo": "https://openbayes.com/console/images/icon/banner-gear.svg",
+		"url": "https://openbayes.com/",
+		"description": "无需调试环境直接在线部署的机器学习调试平台，内涵大量数据集、模型集、教程集。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
