@@ -179,7 +179,7 @@ where 条件
 基本用法：
 
 ```
-SELECT name,IF(sex=1,'男','女')sex FROM students;
+SELECT name,IF(sex=1,'男','女') as sex FROM students;
 ```
 
 上述if的用法为如果sex=1，返回'男'，否则返回'女',if只能用来做二分支的判断。并且必须写明两个分支的返回值，'男'和'女'都不能缺少，否则报错，而case when会更灵活，可以只写一个返回值，不写else。
@@ -319,7 +319,17 @@ select datediff(day1,day2)      示例：datediff('2025-12-31','2025-12-29') -> 
 select timediff(time1,time2)   示例：timediff('12:45:00','12:00:00') -> 0:45:00
 ```
 
-这两个函数针对日期和时刻数据都能很好的计算天数差和标准的时刻差，在日期处理中较为常用。
+这两个函数针对日期和时刻数据都能很好的计算天数差和标准的时刻差，在日期处理中较为常用,其中，起始时间在前，结束时间在后。
+
+此外，还有一个功能强大的时间差计算函数：`TIMESTAMPDIFF`，可以支持非常多种时间计数单位的差值运算，包含`YEAR`、`MONTH`、`DAY`、`HOUR`、`MINUTE`、`SECOND`。
+```
+select TIMESTAMPDIFF(YEAR, '2018-03-20 23:59:00', '2015-03-22 00:00:00') -> -2
+select TIMESTAMPDIFF(MONTH, '2018-03-20 23:59:00', '2015-03-22 00:00:00') -> -35
+select TIMESTAMPDIFF(DAY, '2018-03-20 23:59:00', '2015-03-22 00:00:00') -> -1094
+select TIMESTAMPDIFF(HOUR, '2018-03-20 23:59:00', '2015-03-22 00:00:00') -> -26279
+select TIMESTAMPDIFF(MINUTE, '2018-03-20 23:59:00', '2015-03-22 00:00:00') ->  -1576799
+select TIMESTAMPDIFF(SECOND, '2018-03-20 23:59:00', '2015-03-22 00:00:00') ->  -94607940
+```
 
 # 数值数据的处理
 
