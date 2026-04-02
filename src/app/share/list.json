@@ -468,5 +468,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "ChatExcel",
+		"logo": "https://www.chatexcel.com/workspace/icon_img/aitable.svg",
+		"url": "https://www.chatexcel.com/",
+		"description": "在线利用AI交互Excel文件",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
