@@ -478,5 +478,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "WildAI",
+		"logo": "https://bewild.ai/assets/logo-horizontal-black-DVAjOx0p.svg",
+		"url": "https://bewild.ai/",
+		"description": "AI产品一站式订阅服务平台，支持国内支付方式，还提供海外手机号验证服务。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
