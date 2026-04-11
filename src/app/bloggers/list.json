@@ -257,5 +257,12 @@
 		"url": "https://www.hankcs.com/",
 		"description": "放牧代码和思想\n专注自然语言处理、机器学习算法",
 		"stars": 3
+	},
+	{
+		"name": "王成军",
+		"avatar": "https://chengjun.github.io/mybook/_static/socrates_jump.gif",
+		"url": "https://chengjun.github.io/mybook/index.html",
+		"description": "香港城市大学互联网挖掘实验室博士生，传播学研究者",
+		"stars": 3
 	}
 ]
