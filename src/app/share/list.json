@@ -488,5 +488,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "Excalidraw",
+		"logo": "https://excalidraw.com/favicon-32x32.png",
+		"url": "https://excalidraw.com/",
+		"description": "在线免费白板绘图",
+		"tags": [
+			"可视化"
+		],
+		"stars": 3
 	}
 ]
