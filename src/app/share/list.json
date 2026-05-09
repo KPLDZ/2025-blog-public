@@ -498,5 +498,15 @@
 			"可视化"
 		],
 		"stars": 3
+	},
+	{
+		"name": "拉布拉东",
+		"logo": "https://labuladong.online/images/platforms/labuladong.webp",
+		"url": "https://labuladong.online/",
+		"description": "在线学习算法和编程的网站，支持微信、google、github登录（个人用VX登录）",
+		"tags": [
+			"学习"
+		],
+		"stars": 3
 	}
 ]
