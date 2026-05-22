@@ -518,5 +518,15 @@
 			"网站集"
 		],
 		"stars": 3
+	},
+	{
+		"name": "gitbook",
+		"logo": "https://images.gitbook.com/__img/dpr=1,width=256,onerror=redirect,fit=contain,format=auto,signature=105598752/https%3A%2F%2Ffiles.gitbook.com%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fintegrations%252Flinear%252Ficon%252F2sYT6skIZ7LKrcB9WzBn%252Ficon.png%3Falt%3Dmedia",
+		"url": "app.gitbook.com",
+		"description": "在线电子书阅览、编辑平台，支持AI协作、多人协作，用git版本管理的方式管理阅读记录。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
