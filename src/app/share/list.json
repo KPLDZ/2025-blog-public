@@ -508,5 +508,15 @@
 			"学习"
 		],
 		"stars": 3
+	},
+	{
+		"name": "clawsgo",
+		"logo": "https://clawsgo.cn/favicon.ico?favicon.095vmi_2-.mz5.ico",
+		"url": "clawsgo.cn",
+		"description": "在线agent智能体云平台，每月有一定免费额度。",
+		"tags": [
+			"网站集"
+		],
+		"stars": 3
 	}
 ]
