@@ -1,0 +1,12 @@
+{
+  "title": "Git+Claude Code开发高频实操指令",
+  "tags": [
+    "Claude Code",
+    "开发",
+    "Git"
+  ],
+  "date": "2026-07-06T20:26",
+  "summary": "Claude AI 代码幻觉易产出 Bug、破坏工程框架，Git 作为兜底版本管控工具，实现分支管理、代码回滚、冲突修复，搭配 PyCharm 可视化开发。",
+  "cover": "/blogs/git-claude_code/39f057d4f3b8f988.png",
+  "hidden": false
+}
