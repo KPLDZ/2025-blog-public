@@ -161,3 +161,29 @@ git diff shixiaolv -- code/main.py
 # 3. 【Git差异解析模板】
 帮我解读这份git diff差异，标注哪些是新增、修改、删除，识别潜在代码冲突，给出最优合并方案。
 ```
+## 三、 Git开发范式推荐:Git Flow 分支管理 + 原子化提交 + 分层迭代开发
+一下方式兼顾单人开发、后续团队协作。
+## 1. 固定5类长期分支（永久存在）
+1. `main`（主线/生产分支）：**永远只存放可交付、稳定无bug的版本**，禁止直接在该分支写代码，仅通过merge合并release/hotfix分支；每一次合并到main必须打版本标签 `vX.Y.Z`（如v1.2.0）。
+2. `develop`（开发主分支）：所有新功能集成分支，存放迭代完成、测试通过的功能，是日常开发核心分支；稳定积累到一定功能后合并进main发布版本。
+
+## 2. 3类临时短期分支（开发完成即删除）
+1. `feature/xxx` 功能分支：从develop拉出，单功能独立开发
+   - 示例：`feature/shuidou_pulse_calc` 水道脉动计算UI、`feature/beta_query_btn` beta参数查询功能；
+   - 规则：一个需求/一个工具对应一条feature分支，开发+自测完成后合并回develop，随后删除分支。
+2. `release/vX.Y.Z` 版本发布分支：从develop拉出，统一做全量集成测试、文档完善、打包导出；测试无bug后合并main+develop，打版本标签。
+3. `hotfix/vX.Y.Z` 紧急修复分支：线上main版本发现严重bug时，从main拉出，修复后同步合并main+develop，用于线上紧急补丁。
+
+## 3. 强制原子化提交规范（每条提交只做一件事）
+### 提交日志标准模板（固定格式，可读性拉满）
+【类型】[模块] 简短描述（关联任务 ID）
+详细补充说明（可选，换行写）
+
+类型分类：
+- feat：新增功能；fix：bug修复；opt：性能/UI逻辑优化；docs：文档更新；refactor：代码重构；test：单元/集成测试；chore：工程配置清理（删除无用文件、目录整理）
+
+### 正确提交示例
+1. feat [ShuidaoTool] 新增水道脉动次数计算UI界面（TASK-037）
+2. opt [ShixiaolvTool] 统一导出报告默认文件名datahuang（TASK-036）
+3. fix [ReliabilityTool] 修复quantity不参与失效率连乘计算bug（BUG-012）
+4. chore [工程] 移除项目内无用冗余文件
